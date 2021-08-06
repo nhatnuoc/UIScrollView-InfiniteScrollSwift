@@ -1,5 +1,5 @@
 import XCTest
-import UIScrollView-InfiniteScrollSwift
+//import UIScrollView-InfiniteScrollSwift
 
 class Tests: XCTestCase {
     

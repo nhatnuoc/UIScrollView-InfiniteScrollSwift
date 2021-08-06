@@ -1,0 +1,16 @@
+PODS:
+  - UIScrollView-InfiniteScrollSwift (0.1.0)
+
+DEPENDENCIES:
+  - UIScrollView-InfiniteScrollSwift (from `../`)
+
+EXTERNAL SOURCES:
+  UIScrollView-InfiniteScrollSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIScrollView-InfiniteScrollSwift: 9f97db5bedbdfda9a92226df8da18005bfa26f93
+
+PODFILE CHECKSUM: 2cdde15e5d553c0461795cc0ab90affc1ad725d5
+
+COCOAPODS: 1.10.1
