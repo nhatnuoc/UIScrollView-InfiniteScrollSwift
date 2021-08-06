@@ -10,13 +10,13 @@ Infinite scroll implementation as a extension for UIScrollView. It's written by 
 <table>
     <tr>
         <td>
-            <img src="https://raw.githubusercontent.com/pronebird/UIScrollView-InfiniteScroll/master/README%20images/InfiniteScroll1.gif">
+            <img src="https://raw.githubusercontent.com/nhatnuoc/UIScrollView-InfiniteScrollSwift/master/README%20images/InfiniteScroll1.gif">
         </td>
         <td>
-            <img src="https://raw.githubusercontent.com/pronebird/UIScrollView-InfiniteScroll/master/README%20images/InfiniteScroll2.gif">
+            <img src="https://raw.githubusercontent.com/nhatnuoc/UIScrollView-InfiniteScrollSwift/master/README%20images/InfiniteScroll2.gif">
         </td>
         <td>
-            <img src="https://raw.githubusercontent.com/pronebird/UIScrollView-InfiniteScroll/master/README%20images/InfiniteScroll3.gif">
+            <img src="https://raw.githubusercontent.com/nhatnuoc/UIScrollView-InfiniteScrollSwift/master/README%20images/InfiniteScroll3.gif">
         </td>
     </tr>
 </table>
@@ -115,9 +115,9 @@ tableView.infiniteScrollTriggerOffset = 500
 
 You can use custom indicator instead of default `UIActivityIndicatorView`.
 
-Custom indicator must be a subclass of `UIView` and implement the following methods:
+Custom indicator must be a subclass of `UIView` and implement protocol `InfiniteScrollIndicatorView`:
 
-```objc
+```swift
 func startAnimating()
 func stopAnimating()
 ```
@@ -126,9 +126,17 @@ let frame = CGRect(x: 0, y: 0, width: 24, height: 24)
 tableView.infiniteScrollIndicatorView = CustomInfiniteIndicator(frame: frame)
 ```
 
-[CustomInfiniteIndicator.swift](https://github.com/pronebird/UIScrollView-InfiniteScroll/blob/master/InfiniteScrollViewDemoSwift/CustomInfiniteIndicator.swift)
-
 At the moment InfiniteScroll uses indicator's frame directly so make sure you size custom indicator view beforehand. Such views as `UIImageView` or `UIActivityIndicatorView` will automatically resize themselves so no need to setup frame for them.
+
+### Remove infinite scroll
+
+You have to remove infinite scrolling in `deinit`.
+
+```swift
+deinit {
+    self.tableView.removeInfiniteScroll()
+}
+```
 
 ## Author
 

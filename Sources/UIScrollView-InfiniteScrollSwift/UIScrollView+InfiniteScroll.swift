@@ -21,7 +21,7 @@ extension UIScrollView {
             self.infiniteScrollState?.isLoading = newValue
         }
     }
-    public var infiniteScrollIndicatorView: UIView? {
+    public var infiniteScrollIndicatorView: InfiniteScrollIndicatorView? {
         get {
             if let v = self.infiniteScrollState?.indicatorView, self.infiniteScrollState?.indicatorView?.superview == nil {
                 self.addSubview(v)
@@ -112,7 +112,7 @@ extension UIScrollView {
         var isInitialized: Bool = false
         var isLoading: Bool = false
         var direction: InfiniteScrollDirection = .vertical
-        lazy var indicatorView: UIView? = {
+        lazy var indicatorView: InfiniteScrollIndicatorView? = {
             let activityIndicator = UIActivityIndicatorView(style: self.indicatorStyle)
             activityIndicator.color = UIColor.black
             return activityIndicator
@@ -160,8 +160,6 @@ extension UIScrollView {
         guard let state = self.infiniteScrollState, !state.isLoading else { return }
         if self.shouldShowInfiniteScroll {
             self.startAnimatingInfiniteScroll(force)
-//            self.perform(#selector(callInfiniteScrollHandler), with: self, afterDelay: 0.1, inModes: [RunLoop.Mode.default])
-//            self.infiniteScrollState?.infiniteScrollHandler?(self)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
                 self?.callInfiniteScrollHandler()
             }
@@ -173,9 +171,7 @@ extension UIScrollView {
         let activityIndicator = self.infiniteScrollIndicatorView
         self.positionInfiniteScrollIndicator(with: self.contentSize)
         activityIndicator?.isHidden = false
-        if activityIndicator?.responds(to: #selector(UIActivityIndicatorView.startAnimating)) ?? false {
-            activityIndicator?.perform(#selector(UIActivityIndicatorView.startAnimating))
-        }
+        activityIndicator?.startAnimating()
         let indicatorInset = self.infiniteIndicatorRowSize
         var contentInset = self.contentInset
         if state?.direction == .vertical {
@@ -227,9 +223,7 @@ extension UIScrollView {
                     self.scrollToInfiniteIndicatorIfNeeded(false, force: false)
                 }
             }
-            if activityIndicator.responds(to: #selector(UIActivityIndicatorView.stopAnimating)) {
-                activityIndicator.perform(#selector(UIActivityIndicatorView.stopAnimating))
-            }
+            activityIndicator.stopAnimating()
             activityIndicator.isHidden = true
             state.isLoading = false
             handler?(self)
@@ -429,3 +423,10 @@ fileprivate var infiniteScrollStates: [AnyHashable: UIScrollView.InfiniteScrollS
         print(infiniteScrollStates.count)
     }
 }
+
+public protocol InfiniteScrollIndicatorView where Self: UIView {
+    func startAnimating()
+    func stopAnimating()
+}
+
+extension UIActivityIndicatorView: InfiniteScrollIndicatorView {}

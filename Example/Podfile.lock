@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIScrollView-InfiniteScrollSwift: 9f97db5bedbdfda9a92226df8da18005bfa26f93
+  UIScrollView-InfiniteScrollSwift: a56258a3a78db44e0dff33f0c08458bec451c1ba
 
 PODFILE CHECKSUM: 2cdde15e5d553c0461795cc0ab90affc1ad725d5
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2
