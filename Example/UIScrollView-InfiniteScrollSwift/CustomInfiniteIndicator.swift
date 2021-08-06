@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import UIScrollView_InfiniteScrollSwift
 
 private let rotationAnimationKey = "rotation"
 
-class CustomInfiniteIndicator: UIView {
+class CustomInfiniteIndicator: UIView, InfiniteScrollIndicatorView {
     
     var thickness: CGFloat = 2
     var outerColor: UIColor? {
@@ -77,14 +78,14 @@ class CustomInfiniteIndicator: UIView {
         return animating
     }
 
-    @objc func startAnimating() {
+    func startAnimating() {
         guard !animating else { return }
         animating = true
         isHidden = false
         addAnimation()
     }
 
-    @objc func stopAnimating() {
+    func stopAnimating() {
         guard animating else { return }
         animating = false
         isHidden = true

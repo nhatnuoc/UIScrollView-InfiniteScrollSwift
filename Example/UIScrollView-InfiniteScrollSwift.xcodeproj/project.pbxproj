@@ -41,6 +41,7 @@
 		0B9BEB6C26BCF392008F0273 /* FlickrResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrResponse.swift; sourceTree = "<group>"; };
 		0B9BEB6F26BCF3C9008F0273 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		0B9BEB7126BCF3DB008F0273 /* CustomInfiniteIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfiniteIndicator.swift; sourceTree = "<group>"; };
+		0B9BEB7326BD4707008F0273 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		21313F10DAF008B3591F1B80 /* Pods_UIScrollView_InfiniteScrollSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIScrollView_InfiniteScrollSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257FFE2F75E4DA361A0958AC /* Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-UIScrollView-InfiniteScrollSwift_Tests/Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIScrollView-InfiniteScrollSwift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +162,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				0B9BEB7326BD4707008F0273 /* Package.swift */,
 				9F146B10AB00E43A00101DE6 /* UIScrollView-InfiniteScrollSwift.podspec */,
 				DFBB250CA5ABAFFBC413D6A0 /* README.md */,
 				04D92DD9F8694403E4CB2461 /* LICENSE */,
