@@ -1,6 +1,6 @@
 # UIScrollView-InfiniteScrollSwift
 
-[![CI Status](https://img.shields.io/travis/binhvuong.2010@gmail.com/UIScrollView-InfiniteScrollSwift.svg?style=flat)](https://travis-ci.org/binhvuong.2010@gmail.com/UIScrollView-InfiniteScrollSwift)
+[![CI Status](https://img.shields.io/travis/binhvuong.2010@gmail.com/UIScrollView-InfiniteScrollSwift.svg?style=flat)](https://travis-ci.com/nhatnuoc/UIScrollView-InfiniteScrollSwift)
 [![Version](https://img.shields.io/cocoapods/v/UIScrollView-InfiniteScrollSwift.svg?style=flat)](https://cocoapods.org/pods/UIScrollView-InfiniteScrollSwift)
 [![License](https://img.shields.io/cocoapods/l/UIScrollView-InfiniteScrollSwift.svg?style=flat)](https://cocoapods.org/pods/UIScrollView-InfiniteScrollSwift)
 [![Platform](https://img.shields.io/cocoapods/p/UIScrollView-InfiniteScrollSwift.svg?style=flat)](https://cocoapods.org/pods/UIScrollView-InfiniteScrollSwift)
