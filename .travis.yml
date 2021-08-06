@@ -6,7 +6,7 @@ osx_image: xcode12.5
 language: swift
 # podfile: Example/Podfile
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+# - gem install cocoapods # Since Travis is not always on latest version
 - bundle install
 - bundle exec pod install --repo-update --project-directory=Example
 cache: cocoapods
