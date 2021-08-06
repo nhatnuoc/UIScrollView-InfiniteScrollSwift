@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UIScrollView-InfiniteScrollSwift",
+        "repositoryURL": "https://github.com/nhatnuoc/UIScrollView-InfiniteScrollSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "614e1b821ada0b51f366e262fe4703a3005af073",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

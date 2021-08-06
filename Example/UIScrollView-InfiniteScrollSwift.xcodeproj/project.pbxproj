@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		0B9BEB6E26BCF392008F0273 /* FlickrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB6C26BCF392008F0273 /* FlickrResponse.swift */; };
 		0B9BEB7026BCF3C9008F0273 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB6F26BCF3C9008F0273 /* Support.swift */; };
 		0B9BEB7226BCF3DB008F0273 /* CustomInfiniteIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB7126BCF3DB008F0273 /* CustomInfiniteIndicator.swift */; };
+		0B9BEB7626BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9BEB7626BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift in Frameworks */,
 				A470F90B3746C9B90954B84B /* Pods_UIScrollView_InfiniteScrollSwift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +199,9 @@
 			dependencies = (
 			);
 			name = "UIScrollView-InfiniteScrollSwift_Example";
+			packageProductDependencies = (
+				0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */,
+			);
 			productName = "UIScrollView-InfiniteScrollSwift";
 			productReference = 607FACD01AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,7 +503,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -507,7 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIScrollView-InfiniteScrollSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +534,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIScrollView-InfiniteScrollSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,7 +559,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -562,7 +581,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -602,6 +625,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nhatnuoc/UIScrollView-InfiniteScrollSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */;
+			productName = "UIScrollView-InfiniteScrollSwift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

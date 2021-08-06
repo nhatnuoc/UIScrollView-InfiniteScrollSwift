@@ -1,3 +1,6 @@
+import UIKit
+import Foundation
+
 // MARK: - public methods
 extension UIScrollView {
     public enum InfiniteScrollDirection: Int {
