@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,8 @@
 		0B9BEB6E26BCF392008F0273 /* FlickrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB6C26BCF392008F0273 /* FlickrResponse.swift */; };
 		0B9BEB7026BCF3C9008F0273 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB6F26BCF3C9008F0273 /* Support.swift */; };
 		0B9BEB7226BCF3DB008F0273 /* CustomInfiniteIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB7126BCF3DB008F0273 /* CustomInfiniteIndicator.swift */; };
-		0B9BEB7626BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */; };
+		0B9BEB9826BD5462008F0273 /* SPM_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEB9726BD5462008F0273 /* SPM_ExampleTests.swift */; };
+		0B9BEBA326BD5462008F0273 /* SPM_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BEBA226BD5462008F0273 /* SPM_ExampleUITests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -43,6 +44,19 @@
 		0B9BEB6F26BCF3C9008F0273 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		0B9BEB7126BCF3DB008F0273 /* CustomInfiniteIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfiniteIndicator.swift; sourceTree = "<group>"; };
 		0B9BEB7326BD4707008F0273 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		0B9BEB8026BD545F008F0273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B9BEB8226BD545F008F0273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B9BEB8426BD545F008F0273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B9BEB8726BD545F008F0273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B9BEB8926BD5462008F0273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B9BEB8C26BD5462008F0273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B9BEB8E26BD5462008F0273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9BEB9326BD5462008F0273 /* SPM_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9BEB9726BD5462008F0273 /* SPM_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPM_ExampleTests.swift; sourceTree = "<group>"; };
+		0B9BEB9926BD5462008F0273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9BEB9E26BD5462008F0273 /* SPM_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPM_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9BEBA226BD5462008F0273 /* SPM_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPM_ExampleUITests.swift; sourceTree = "<group>"; };
+		0B9BEBA426BD5462008F0273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21313F10DAF008B3591F1B80 /* Pods_UIScrollView_InfiniteScrollSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIScrollView_InfiniteScrollSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257FFE2F75E4DA361A0958AC /* Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-UIScrollView-InfiniteScrollSwift_Tests/Pods-UIScrollView-InfiniteScrollSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIScrollView-InfiniteScrollSwift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,11 +78,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B9BEB9026BD5462008F0273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9BEB9B26BD5462008F0273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9BEB7626BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift in Frameworks */,
 				A470F90B3746C9B90954B84B /* Pods_UIScrollView_InfiniteScrollSwift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +111,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B9BEB7F26BD545F008F0273 /* SPM_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BEB8026BD545F008F0273 /* AppDelegate.swift */,
+				0B9BEB8226BD545F008F0273 /* SceneDelegate.swift */,
+				0B9BEB8426BD545F008F0273 /* ViewController.swift */,
+				0B9BEB8626BD545F008F0273 /* Main.storyboard */,
+				0B9BEB8926BD5462008F0273 /* Assets.xcassets */,
+				0B9BEB8B26BD5462008F0273 /* LaunchScreen.storyboard */,
+				0B9BEB8E26BD5462008F0273 /* Info.plist */,
+			);
+			path = SPM_Example;
+			sourceTree = "<group>";
+		};
+		0B9BEB9626BD5462008F0273 /* SPM_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BEB9726BD5462008F0273 /* SPM_ExampleTests.swift */,
+				0B9BEB9926BD5462008F0273 /* Info.plist */,
+			);
+			path = SPM_ExampleTests;
+			sourceTree = "<group>";
+		};
+		0B9BEBA126BD5462008F0273 /* SPM_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BEBA226BD5462008F0273 /* SPM_ExampleUITests.swift */,
+				0B9BEBA426BD5462008F0273 /* Info.plist */,
+			);
+			path = SPM_ExampleUITests;
+			sourceTree = "<group>";
+		};
 		315D1F8FFE0CE2C9EC14F2EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +160,9 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for UIScrollView-InfiniteScrollSwift */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				0B9BEB7F26BD545F008F0273 /* SPM_Example */,
+				0B9BEB9626BD5462008F0273 /* SPM_ExampleTests */,
+				0B9BEBA126BD5462008F0273 /* SPM_ExampleUITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				315D1F8FFE0CE2C9EC14F2EB /* Pods */,
 				6C5B0D167383E38F53374031 /* Frameworks */,
@@ -112,6 +174,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example.app */,
 				607FACE51AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Tests.xctest */,
+				0B9BEB9326BD5462008F0273 /* SPM_ExampleTests.xctest */,
+				0B9BEB9E26BD5462008F0273 /* SPM_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +248,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B9BEB9226BD5462008F0273 /* SPM_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9BEBAC26BD5462008F0273 /* Build configuration list for PBXNativeTarget "SPM_ExampleTests" */;
+			buildPhases = (
+				0B9BEB8F26BD5462008F0273 /* Sources */,
+				0B9BEB9026BD5462008F0273 /* Frameworks */,
+				0B9BEB9126BD5462008F0273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPM_ExampleTests;
+			productName = SPM_ExampleTests;
+			productReference = 0B9BEB9326BD5462008F0273 /* SPM_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B9BEB9D26BD5462008F0273 /* SPM_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9BEBAD26BD5462008F0273 /* Build configuration list for PBXNativeTarget "SPM_ExampleUITests" */;
+			buildPhases = (
+				0B9BEB9A26BD5462008F0273 /* Sources */,
+				0B9BEB9B26BD5462008F0273 /* Frameworks */,
+				0B9BEB9C26BD5462008F0273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPM_ExampleUITests;
+			productName = SPM_ExampleUITests;
+			productReference = 0B9BEB9E26BD5462008F0273 /* SPM_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		607FACCF1AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "UIScrollView-InfiniteScrollSwift_Example" */;
@@ -200,7 +298,6 @@
 			);
 			name = "UIScrollView-InfiniteScrollSwift_Example";
 			packageProductDependencies = (
-				0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */,
 			);
 			productName = "UIScrollView-InfiniteScrollSwift";
 			productReference = 607FACD01AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example.app */;
@@ -231,10 +328,22 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					0B9BEB9226BD5462008F0273 = {
+						CreatedOnToolsVersion = 12.5.1;
+						DevelopmentTeam = NW5H8FD7V6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B9BEB7D26BD545F008F0273;
+					};
+					0B9BEB9D26BD5462008F0273 = {
+						CreatedOnToolsVersion = 12.5.1;
+						DevelopmentTeam = NW5H8FD7V6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B9BEB7D26BD545F008F0273;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -257,7 +366,6 @@
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
-				0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -265,11 +373,27 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Example */,
 				607FACE41AFB9204008FA782 /* UIScrollView-InfiniteScrollSwift_Tests */,
+				0B9BEB9226BD5462008F0273 /* SPM_ExampleTests */,
+				0B9BEB9D26BD5462008F0273 /* SPM_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B9BEB9126BD5462008F0273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9BEB9C26BD5462008F0273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +479,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B9BEB8F26BD5462008F0273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9BEB9826BD5462008F0273 /* SPM_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9BEB9A26BD5462008F0273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9BEBA326BD5462008F0273 /* SPM_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +529,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0B9BEB8626BD545F008F0273 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9BEB8726BD545F008F0273 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B9BEB8B26BD5462008F0273 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9BEB8C26BD5462008F0273 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -408,6 +564,126 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B9BEBA726BD5462008F0273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NW5H8FD7V6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SPM_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binhnt.SPM-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Example.app/SPM_Example";
+			};
+			name = Debug;
+		};
+		0B9BEBA826BD5462008F0273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NW5H8FD7V6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SPM_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binhnt.SPM-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPM_Example.app/SPM_Example";
+			};
+			name = Release;
+		};
+		0B9BEBA926BD5462008F0273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NW5H8FD7V6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SPM_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binhnt.SPM-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPM_Example;
+			};
+			name = Debug;
+		};
+		0B9BEBAA26BD5462008F0273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NW5H8FD7V6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SPM_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binhnt.SPM-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPM_Example;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,8 +779,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -516,10 +791,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIScrollView-InfiniteScrollSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,10 +806,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIScrollView-InfiniteScrollSwift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,11 +828,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -581,11 +846,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -597,6 +858,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B9BEBAC26BD5462008F0273 /* Build configuration list for PBXNativeTarget "SPM_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9BEBA726BD5462008F0273 /* Debug */,
+				0B9BEBA826BD5462008F0273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9BEBAD26BD5462008F0273 /* Build configuration list for PBXNativeTarget "SPM_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9BEBA926BD5462008F0273 /* Debug */,
+				0B9BEBAA26BD5462008F0273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "UIScrollView-InfiniteScrollSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,25 +904,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nhatnuoc/UIScrollView-InfiniteScrollSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0B9BEB7526BD50AE008F0273 /* UIScrollView-InfiniteScrollSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0B9BEB7426BD50AE008F0273 /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScrollSwift" */;
-			productName = "UIScrollView-InfiniteScrollSwift";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
